@@ -1,0 +1,22 @@
+**Grupo 1**
+
+no enunciado diz: "O grupo deve analisar criticamente os cenários com base no conteúdo visto na disciplina."
+
+no cenário da financeira podemos colocar como facilidade de vazamento interno de dados uma questão
+que eu notei na minha primeira semana lá: um funcionário recém contratado tem acesso ao banco de dados de 2mi clientes
+
+contendo dados sensíveis como cpf, rg, cnh, endereços, telefones, emails, familiares, contas bancárias etc
+
+com base nisso podemos descrever um cenário ideal de segurança interna com diferentes níveis de permissões para cada usuário
+
+por exemplo: usuários terceirizados (meu caso quando notei isso) os dados poderiam ser todos anonimizados para o perfil de acesso nível baixo
+
+gerentes de projeto poderiam ter acessos mais sensíveis para resolução de problemas específicos, mas utilizando de consultas criptografadas 
+através de vpn com limite de resultados na consulta e somente o pessoal de segurança com acesso máximo poderia visualizar os dados, mas mesmo assim,
+sem a possibilidade de consultar N registros, teria sempre de haver um limite de consulta e se necessário
+realizar exportação de base ou algo assim, seria necessário um aval de segurança de dados
+
+só aí já temos os dados sensíveis, o problema e uma possível solução
+
+seria bom seguirmos escrevendo as melhores práticas nesse caso, como uma referencia para tecnologias de criptografia em consulta de dados,
+transferência de dados pela vpn, níveis de acesso, ferramentas de sso etc
